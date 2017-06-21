@@ -4,7 +4,7 @@ abcdefghijklmnopqrstuvwxyz<br/>
 <span class="lestania">abcdefghijklmnopqrstuvwxyz</span>
 
 ## Sample
-<input id="sample-input">sample</input>
+<input id="sample-input" value="sample">
 <p class="lestania" id="sample">sample</p>
 
 {% include scripts.html %}
