@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>test</title>
+<style type="text/css">
+@font-face {
+  font-family: "lestania";
+  src: url(lestania.ttf) format("truetype");
+}
+body {
+  font-family: serif;
+  font-size: 20px;
+}
+.lestania {
+  font-family: "lestania", serif;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<p>
+abcdefghijklmnopqrstuvwxyz<br/>
+<span class="lestania">abcdefghijklmnopqrstuvwxyz</span>
+</p>
+
+<input oninput="document.getElementById('sample').textContent = document.getElementById('sample-input').value" id="sample-input" />
+<p class="lestania" id="sample"></p>
+</body>
+</html>
