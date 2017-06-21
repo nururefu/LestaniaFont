@@ -1,3 +1,3 @@
-{% include blog-head.html %}
+{% include head.html %}
 ## Lestania font
 <span class="lestania">abc</span>
