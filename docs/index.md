@@ -5,6 +5,6 @@ abcdefghijklmnopqrstuvwxyz<br/>
 
 ## Sample
 <input id="sample-input" value="sample">
-<p class="lestania" id="sample">sample</p>
+<p class="lestania" id="sample-text">sample</p>
 
 {% include scripts.html %}
