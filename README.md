@@ -1,2 +1,0 @@
-# LestaniaFont
-Lestania Font
