@@ -14,6 +14,9 @@ QとXの存在が確認されていないため、フォントに含まれてお
 * [Releases]({{ site.github.releases_url }})
 
 ## リリース履歴
+* 2017/06/24 v1.0alpha2
+  * フォント名修正
+  * スペース文字追加
 * 2017/06/23 v1.0alpha
 
 {% include scripts.html %}
