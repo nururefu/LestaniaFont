@@ -7,4 +7,7 @@ abcdefghijklmnopqrstuvwxyz<br/>
 <input id="sample-input" value="sample">
 <p class="lestania" id="sample-text">sample</p>
 
+## Download
+* [{{ site.github.LestaniaFont.name }}]({{ site.github.LestaniaFont.html_url }})
+
 {% include scripts.html %}
