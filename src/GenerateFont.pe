@@ -1,0 +1,54 @@
+#!/usr/local/bin/fontforge
+
+_fontfilename = "lestania.ttf"
+
+Open($1)
+
+# エンコードにUnicodeを指定
+Reencode("unicode")
+
+# すべて選択
+SelectAll()
+
+# 自動ヒントづけOFF
+#DontAutoHint()
+
+# パスの統合
+#RemoveOverlap()
+
+# 整数値に丸める
+RoundToInt()
+
+# 自動幅
+AutoWidth(10)
+
+# アウトラインの向きを修正
+CorrectDirection()
+
+# 半角スペース作成
+Select(0u0020)
+SetWidth(500)
+
+# 全角スペース作成
+#Select(0u3000)
+#SetWidth(1000)
+
+# フォント情報設定
+SetFontNames("lestania",\
+             "lestania",\
+             "lestania",\
+             "Regular",\
+             "",\
+             "") 
+#SetOS2Value("WinAscent", 880)
+#SetOS2Value("WinDescent", 120)
+#SetOS2Value("HHeadAscent", 880)
+#SetOS2Value("HHeadDescent", -120)
+
+# TTF生成
+Generate(_fontfilename)
+Print("generated: "+ _fontfilename)
+
+Close()
+
+Quit()
