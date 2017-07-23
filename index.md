@@ -5,7 +5,7 @@
 lestania:<br/>
 <span class="lestania">abcdefghijklmnopqrstuvwxyz</span>
 
-等角 lestania-mono:<br/>
+lestania-mono(等角):<br/>
 <span class="lestania-mono">abcdefghijklmnopqrstuvwxyz</span>
 
 Qの存在が確認されていないため、フォントに含まれておりません。
