@@ -2,9 +2,11 @@
 ## レスタニア文字フォント
 [Dragon's Dogma Online](http://www.dd-on.jp/)で使用されている文字をフォント化しました。
 
-a-z: <span class="lestania">abcdefghijklmnopqrstuvwxyz</span>
+lestania: <span class="lestania">abcdefghijklmnopqrstuvwxyz</span>
 
-QとXの存在が確認されていないため、フォントに含まれておりません。
+等角 lestania-mono: <span class="lestania-mono">abcdefghijklmnopqrstuvwxyz</span>
+
+Qの存在が確認されていないため、フォントに含まれておりません。
 
 ## サンプル
 <input id="sample-input" value="sample">
@@ -14,6 +16,9 @@ QとXの存在が確認されていないため、フォントに含まれてお
 * [Releases]({{ site.github.releases_url }})
 
 ## リリース履歴
+* 2017/07/23 v1.0alpha4
+  * Xを追加
+  * 等角フォントをリリース
 * 2017/07/08 v1.0alpha3
   * グリフ調整
     * 滑らかさを向上
