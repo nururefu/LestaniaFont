@@ -1,0 +1,77 @@
+#!/usr/local/bin/fontforge
+
+_fontfilename = "lestania_mono.ttf"
+_mono_width = 500
+
+Open($1)
+
+# すべて選択
+SelectAll()
+
+# 自動ヒントづけOFF
+#DontAutoHint()
+
+# パスの統合
+#RemoveOverlap()
+
+# 整数値に丸める
+RoundToInt()
+
+# 自動幅
+AutoWidth(10)
+
+# アウトラインの向きを修正
+CorrectDirection()
+
+# グリフ変形
+charCount = CharCnt()
+i = 0
+while (i < charCount)
+ Select(i)
+ glyphWidth = GlyphInfo('Width')
+ Print('width:' + ToString(glyphWidth))
+ 
+ if (glyphWidth > _mono_width)
+   rx = _mono_width * 100 / glyphWidth
+   Print('rx:' + ToString(rx))
+   Transform(rx, 0, 0, 100, 0, 0)
+ endif
+ 
+ i = i + 1
+endloop
+
+# 幅統一
+SelectAll()
+SetWidth(_mono_width)
+CenterInWidth()
+
+# エンコードにUnicodeを指定
+Reencode("unicode")
+
+# 半角スペース作成
+Select(0u0020)
+SetWidth(_mono_width)
+
+# 全角スペース作成
+#Select(0u3000)
+#SetWidth(1000)
+
+# フォント情報設定
+SetFontNames("lestania-mono",\
+             "lestania-mono",\
+             "lestania-mono",\
+             "Regular",\
+             "",\
+             "") 
+#SetOS2Value("WinAscent", 880)
+#SetOS2Value("WinDescent", 120)
+#SetOS2Value("HHeadAscent", 880)
+#SetOS2Value("HHeadDescent", -120)
+
+# TTF生成
+Generate(_fontfilename)
+Print("generated: "+ _fontfilename)
+
+Close()
+
+Quit()
