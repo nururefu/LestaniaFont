@@ -18,6 +18,12 @@ lestania-mono(等角):<br/>
 ## ダウンロード
 * [Releases]({{ site.github.releases_url }})
 
+## Lestanianizer
+ウェブサイトのフォントをレスタニア文字に置き換える Google Chrome 拡張機能を作りました。
+
+* [ダウンロード](https://chrome.google.com/webstore/detail/lestanianizer/nkkckileddninpdecpogmmokegpkpijn)
+* [ソースコード](https://github.com/nururefu/Lestanianizer)
+
 ## リリース履歴
 * 2018/12/08 v1.0alpha5
   * Qを追加
